@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../../pages/home/home';
+import { DashBoard } from '../../pages/dashboard/dashboard';
 
 @Component({
   selector: 'page-login',
@@ -27,15 +27,7 @@ export class LoginPage {
     }
   }
 
-    login() {
-      this.navCtrl.push(HomePage);
-      // this.nav.setRoot(page.component);
-    };
-  // }
-  //
-  // itemTapped(event, item) {
-  //   // That's right, we're pushing to ourselves!
-  //   this.navCtrl.push(ListPage, {
-  //     item: item
-  //   });
+  login() {
+    this.navCtrl.push(DashBoard);
+  };
 }
